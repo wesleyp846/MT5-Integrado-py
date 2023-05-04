@@ -65,8 +65,7 @@ def venda():
         'type_time': mt.ORDER_TIME_GTC,
         'type_filling': mt.ORDER_FILLING_RETURN,
     }
-    return mt.order_send(request), \
-           print(f'>>>Vendendo {lot} de {symbol} preço {price} com tp {tp} e sl {sl}')
+    return mt.order_send(request), print(f'>>>Vendendo {lot} de {symbol} preço {price} com tp {tp} e sl {sl}'), print("")
 
 def compra():
     lot=LOTE
@@ -90,8 +89,7 @@ def compra():
         'type_time': mt.ORDER_TIME_GTC,
         'type_filling': mt.ORDER_FILLING_RETURN,
     }
-    return mt.order_send(request), \
-           print(f'>>>Comprando {lot} de {symbol} preço {price} com tp {tp} e sl {sl}')
+    return mt.order_send(request), print(f'>>>Comprando {lot} de {symbol} preço {price} com tp {tp} e sl {sl}'), print("")
 
 def timer():
     now = datetime.now().strftime('%H:%M')

@@ -16,6 +16,7 @@ def papel(t=5):
 papel(5)
  '''
 
+"""
 
 def papel(t=5):
     agora = datetime.now().strftime('%H:%M')
@@ -31,7 +32,7 @@ def papel(t=5):
             time.sleep(t)
             return "WINM23"
     
-papel()
+papel()"""
 
 # Entrada de dados
 PAPEL = input("Digite o nome do papel: (exemplo: WINM23)\n") or 'WINM23'
@@ -174,11 +175,11 @@ while True:
             posicao="vendido"
 
     if len(posicoes) == 0:
-        if (sma8 > sma21) and (sma21 > sma80) and (sma80 > sma200):
+        if (sma8 > sma21) and (sma21 > sma80): #and (sma80 > sma200):
             print("Cima")
             time.sleep(30)
             compra()
-        elif (sma8 < sma21) and (sma21 < sma80) and (sma80 < sma200):
+        elif (sma8 < sma21) and (sma21 < sma80): #and (sma80 < sma200):
             print("Baixo")
             time.sleep(30)
             venda()

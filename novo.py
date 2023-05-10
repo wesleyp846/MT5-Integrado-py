@@ -17,6 +17,7 @@ papel(5)
  '''
 
 """
+chat gpt função asyncIo e Await
 
 def papel(t=5):
     agora = datetime.now().strftime('%H:%M')

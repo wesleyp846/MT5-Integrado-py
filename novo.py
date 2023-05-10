@@ -2,57 +2,47 @@ import pandas as pd
 import MetaTrader5 as mt
 import time
 from datetime import datetime
+
+'''
+ from datetime import datetime, timedelta
+
+def papel(t=5):
+    agora = datetime.now().strftime('%H:%M:%S')
+    tempo_futuro = datetime.now() + timedelta(seconds=t)
+    agoraT = tempo_futuro.strftime('%H:%M:%S')
+    print(agora)
+    print(agoraT)
+
+papel(5)
+ '''
+
+
+def papel(t=5):
+    agora = datetime.now().strftime('%H:%M')
+    agoraT = agora + t
+    print(agora)
+    print(agoraT)
+    while agora < agoraT:
+        if input("Digite o nome do papel:") is not None:
+            print()
+            return input
+        else:
+            print('entro no else')
+            time.sleep(t)
+            return "WINM23"
     
-"""def wait_input(prompt, default, timeout=10):
-    print(f'{prompt} (aperte Enter para escolher {default})')
-    choice = input()
-    start_time = time.monotonic()
-    while True:
-        if choice:
-            return choice
-        elif time.monotonic() - start_time > timeout:
-            print(f'Tempo limite de {timeout} segundos atingido. Escolhendo {default} por padrão.')
-            return default
-        time.sleep(1)"""
-
-def wait_input(prompt, default, timeout=5):
-    start_time = time.monotonic()
-    print(f'{prompt} (aperte Enter para escolher {default})')
-    
-    while time.monotonic() - start_time < timeout:
-        print("Tempo restante:", round(10 - (time.monotonic() - start_time), 2), "segundos")
-        time.sleep(1)
-        
-    print("Tempo esgotado!")
-    return default
-    
-
-"""start_time = time.monotonic()
-while time.monotonic() - start_time < 10:
-    
-    print("Tempo restante:", round(10 - (time.monotonic() - start_time), 2), "segundos")
-    time.sleep(1)
-
-print("Tempo esgotado!")"""
-
-
-
+papel()
 
 # Entrada de dados
-PAPEL = wait_input("Digite o nome do papel:", 'WINM23')
-TEMPO_GRAFICO = wait_input("Digite o timeframe", mt.TIMEFRAME_M1)
-LOTE = wait_input("Digite o tamanho do lote:", '1')
-LOTE = float(LOTE)
-COMENT = wait_input("Digite um comentário", 'winmbot')
-HORA_INICIO = wait_input("Digite a hora de início (formato '09:10')", '09:10')
-HORA_FIM = wait_input("Digite a hora de fim (formato '17:50')", '17:50')
-LOSS = wait_input("Digite o valor de perda (exemplo: 1000)", '1000')
-LOSS = float(LOSS)
-GAIM = wait_input("Digite o valor de ganho (exemplo: 2500)", '2500')
-GAIM = float(GAIM)
-MAGICO = wait_input("Digite um valor (ou deixe em branco para usar o valor padrão 1)", '1')
-MAGICO = int(MAGICO)
-
+PAPEL = input("Digite o nome do papel: (exemplo: WINM23)\n") or 'WINM23'
+TEMPO_GRAFICO = input("Digite o timeframe (exemplo: mt.TIMEFRAME_M1):\n") or mt.TIMEFRAME_M1
+LOTE = float(input("Digite o tamanho do lote: (exemplo: 1)\n") or 1)
+COMENT = input("Digite um comentário:\n") or 'winmbot'
+HORA_INICIO = input("Digite a hora de início (formato '09:10'):\n") or '09:10'
+HORA_FIM = input("Digite a hora de fim (formato '17:50'):\n") or '17:50'
+LOSS = float(input("Digite o valor de perda (exemplo: 1000):\n") or 1000)
+GAIM = float(input("Digite o valor de ganho (exemplo: 2500):\n") or 2500)
+MAGICO = int(input("Digite um valor (ou deixe em branco para usar o valor padrão 1):\n") or 1)
 
 def inicializacao():
     try:
@@ -145,13 +135,17 @@ def fechar_dia():
     mt.shutdown()
 
 def aguardar_horario():
-    while True:
+    agora = datetime.now().strftime('%H:%M')
+    while agora < HORA_INICIO:
+        print(f"Aguardando horário {HORA_INICIO}... agora são {agora}")
         agora = datetime.now().strftime('%H:%M')
-        if agora >= HORA_INICIO:
-            break
+        #if agora >= HORA_INICIO:
+        #    break
         print(f"Aguardando horário {HORA_INICIO}... agora são {agora}")
         print('')
         time.sleep(60)
+    print(f"agora são {agora}")
+
 
 
 inicializacao()

@@ -2,49 +2,63 @@ import pandas as pd
 import MetaTrader5 as mt
 import time
 from datetime import datetime
+import asyncio
 
-'''
- from datetime import datetime, timedelta
-
-def papel(t=5):
-    agora = datetime.now().strftime('%H:%M:%S')
-    tempo_futuro = datetime.now() + timedelta(seconds=t)
-    agoraT = tempo_futuro.strftime('%H:%M:%S')
-    print(agora)
-    print(agoraT)
-
-papel(5)
- '''
-
-"""
-chat gpt função asyncIo e Await
-
-def papel(t=5):
-    agora = datetime.now().strftime('%H:%M')
-    agoraT = agora + t
-    print(agora)
-    print(agoraT)
-    while agora < agoraT:
-        if input("Digite o nome do papel:") is not None:
-            print()
-            return input
+async def input_with_timeout(prompt, default, timeout=10):
+    print(f"{prompt} (deixe em branco para usar '{default}')")
+    try:
+        coro = asyncio.wait_for(asyncio.get_event_loop().run_in_executor(None, input), timeout)
+        user_input = await coro
+        if user_input:
+            return user_input
         else:
-            print('entro no else')
-            time.sleep(t)
-            return "WINM23"
+            return default
+    except asyncio.TimeoutError:
+        print(f"Tempo limite de {timeout} segundos atingido. Usando '{default}' por padrão.")
+        return default
     
-papel()"""
+async def main():
+    PAPEL = await input_with_timeout("Digite o codigo do papel\n", 'WINM23')
+    print(''), print('')
+    TEMPO_GRAFICO = await input_with_timeout("Digite o timeframe\n", 'mt.TIMEFRAME_M1')
+    print(''), print('')
+    LOTE = await input_with_timeout("Digite o tamanho do lote\n", '1')
+    LOTE = float(LOTE)
+    print(''), print('')
+    COMENT = await input_with_timeout("Digite um comentário\n", 'winmbot')
+    print(''), print('')
+    HORA_INICIO = await input_with_timeout("Digite a hora de início\n", '09:10')
+    print(''), print('')
+    HORA_FIM = await input_with_timeout("Digite a hora de fim\n", '17:50')
+    print(''), print('')
+    LOSS = await input_with_timeout("Digite o valor de perda\n", '1000')
+    LOSS = float(LOSS)
+    print(''), print('')
+    GAIM = await input_with_timeout("Digite o valor de ganho\n", '2500')
+    GAIM = float(GAIM)
+    print(''), print('')
+    MAGICO = await input_with_timeout("Digite o numero magico\n", '1')
+    MAGICO = int(MAGICO)
+    print(''), print('')
+    
+    return PAPEL, TEMPO_GRAFICO, LOTE, COMENT, HORA_INICIO, HORA_FIM, LOSS, GAIM, MAGICO
 
-# Entrada de dados
-PAPEL = input("Digite o nome do papel: (exemplo: WINM23)\n") or 'WINM23'
-TEMPO_GRAFICO = input("Digite o timeframe (exemplo: mt.TIMEFRAME_M1):\n") or mt.TIMEFRAME_M1
-LOTE = float(input("Digite o tamanho do lote: (exemplo: 1)\n") or 1)
-COMENT = input("Digite um comentário:\n") or 'winmbot'
-HORA_INICIO = input("Digite a hora de início (formato '09:10'):\n") or '09:10'
-HORA_FIM = input("Digite a hora de fim (formato '17:50'):\n") or '17:50'
-LOSS = float(input("Digite o valor de perda (exemplo: 1000):\n") or 1000)
-GAIM = float(input("Digite o valor de ganho (exemplo: 2500):\n") or 2500)
-MAGICO = int(input("Digite um valor (ou deixe em branco para usar o valor padrão 1):\n") or 1)
+# Executar o loop de eventos assíncronos
+loop = asyncio.get_event_loop()
+result = loop.run_until_complete(main())
+loop.close()
+
+PAPEL, TEMPO_GRAFICO, LOTE, COMENT, HORA_INICIO, HORA_FIM, LOSS, GAIM, MAGICO = result
+print(f"PAPEL: {PAPEL}")
+print(f"TEMPO_GRAFICO: {TEMPO_GRAFICO}")
+print(f"LOTE: {LOTE}")
+print(f"COMENT: {COMENT}")
+print(f"HORA_INICIO: {HORA_INICIO}")
+print(f"HORA_FIM: {HORA_FIM}")
+print(f"LOSS: {LOSS}")
+print(f"GAIM: {GAIM}")
+print(f"MAGICO: {MAGICO}")
+print('')
 
 def inicializacao():
     try:

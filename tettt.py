@@ -7,12 +7,11 @@ import csv
 from tkinter import *
 
 LOGSAIDA = "prints.csv"
+
 def salvar_print_csv(mensagem):
     with open(LOGSAIDA, "a", newline="") as file:
         writer = csv.writer(file)
         writer.writerow([datetime.now().strftime("%Y-%m-%d %H:%M:%S"), mensagem])
-
-
 
 async def input_with_timeout(prompt, default, timeout=10):
     print(f"{prompt} (deixe em branco para usar '{default}')")
@@ -28,9 +27,9 @@ async def input_with_timeout(prompt, default, timeout=10):
         print(f"Tempo limite de {timeout} segundos atingido. Usando '{default}' por padrão.")
         salvar_print_csv(f"Tempo limite de {timeout} segundos atingido. Usando '{default}' por padrão.")
         return default
-    
+
 async def main():
-    PAPEL = await input_with_timeout('Digite o codigo do papel\n', 'WINM23')
+    PAPEL = await input_with_timeout('Digite o código do papel\n', 'WINM23')
     print(''), print('')
     TEMPO_GRAFICO = await input_with_timeout('Digite o timeframe\n', 'mt.TIMEFRAME_M1')
     print(''), print('')
@@ -49,7 +48,7 @@ async def main():
     GAIM = await input_with_timeout('Digite o valor de ganho\n', '2500')
     GAIM = float(GAIM)
     print(''), print('')
-    MAGICO = await input_with_timeout('Digite o numero magico\n', '1')
+    MAGICO = await input_with_timeout('Digite o número mágico\n', '1')
     MAGICO = int(MAGICO)
     print(''), print('')
     
@@ -61,17 +60,32 @@ result = loop.run_until_complete(main())
 loop.close()
 
 PAPEL, TEMPO_GRAFICO, LOTE, COMENT, HORA_INICIO, HORA_FIM, LOSS, GAIM, MAGICO = result
-print(f'PAPEL: {PAPEL}')
-print(f'TEMPO_GRAFICO: {TEMPO_GRAFICO}')
-print(f'LOTE: {LOTE}')
-print(f'COMENT: {COMENT}')
-print(f'HORA_INICIO: {HORA_INICIO}')
-print(f'HORA_FIM: {HORA_FIM}')
-print(f'LOSS: {LOSS}')
-print(f'GAIM: {GAIM}')
-print(f'MAGICO: {MAGICO}')
-print('')
-salvar_print_csv(result)
+
+def obter_informacoes():
+    papel = PAPEL
+    timeframe = TEMPO_GRAFICO
+    lote = LOTE
+    coment = COMENT
+    hora_inicio = HORA_INICIO
+    hora_fim = HORA_FIM
+    perda = LOSS
+    ganho = GAIM
+    magico = MAGICO
+
+    # Exibir as informações no terminal
+    print(f'PAPEL: {papel}')
+    print(f'TEMPO_GRAFICO: {timeframe}')
+    print(f'LOTE: {lote}')
+    print(f'COMENT: {coment}')
+    print(f'HORA_INICIO: {hora_inicio}')
+    print(f'HORA_FIM: {hora_fim}')
+    print(f'LOSS: {perda}')
+    print(f'GAIM: {ganho}')
+    print(f'MAGICO: {magico}')
+    print('')
+
+    # Salvar as informações no arquivo CSV
+    salvar_print_csv(result)
 
 def inicializacao():
     try:
@@ -107,7 +121,7 @@ def get_ohlc_with_ema(PAPEL, TEMPO_GRAFICO, n=202):
     return ativo
 
 def venda():
-    lot=LOTE
+    lot = LOTE
     symbol = PAPEL
     point = mt.symbol_info(symbol).point
     price = mt.symbol_info_tick(symbol).bid
@@ -131,7 +145,7 @@ def venda():
     return mt.order_send(request), print(f'>>>Vendendo {lot} de {symbol} preço {price} com tp {tp} e sl {sl}'), print(""), salvar_print_csv(f'>>>Vendendo {lot} de {symbol} preço {price} com tp {tp} e sl {sl}')
 
 def compra():
-    lot=LOTE
+    lot = LOTE
     symbol = PAPEL
     point = mt.symbol_info(symbol).point
     price = mt.symbol_info_tick(symbol).ask
@@ -180,70 +194,65 @@ def aguardar_horario():
     salvar_print_csv(f'Agora são {agora}')
 
 
+# Interface gráfica com o Tkinter
+root = Tk()
+root.title("Terminal Output")
+root.geometry("800x600")
+
+# Componente Text para exibir a saída do terminal
+text_output = Text(root, height=30, width=100)
+text_output.pack()
+
+# Redirecionar a saída padrão para o componente Text
+sys.stdout = text_output
+
+# Função para atualizar a saída no componente Text
+def update_output():
+    text_output.update_idletasks()
+
+# Função para exibir as mensagens no componente Text
+def print_to_output(message):
+    print(message)
+    update_output()
+
+# Executar o loop de eventos assíncronos
+loop = asyncio.get_event_loop()
+result = loop.run_until_complete(main())
+loop.close()
+
+PAPEL, TEMPO_GRAFICO, LOTE, COMENT, HORA_INICIO, HORA_FIM, LOSS, GAIM, MAGICO = result
+
+print_to_output(f'PAPEL: {PAPEL}')
+print_to_output(f'TEMPO_GRAFICO: {TEMPO_GRAFICO}')
+print_to_output(f'LOTE: {LOTE}')
+print_to_output(f'COMENT: {COMENT}')
+print_to_output(f'HORA_INICIO: {HORA_INICIO}')
+print_to_output(f'HORA_FIM: {HORA_FIM}')
+print_to_output(f'LOSS: {LOSS}')
+print_to_output(f'GAIM: {GAIM}')
+print_to_output(f'MAGICO: {MAGICO}')
+print_to_output('')
+salvar_print_csv('PAPEL: ' + PAPEL)
+salvar_print_csv('TEMPO_GRAFICO: ' + TEMPO_GRAFICO)
+salvar_print_csv('LOTE: ' + str(LOTE))
+salvar_print_csv('COMENT: ' + COMENT)
+salvar_print_csv('HORA_INICIO: ' + HORA_INICIO)
+salvar_print_csv('HORA_FIM: ' + HORA_FIM)
+salvar_print_csv('LOSS: ' + str(LOSS))
+salvar_print_csv('GAIM: ' + str(GAIM))
+salvar_print_csv('MAGICO: ' + str(MAGICO))
+print_to_output('')
+
 inicializacao()
-aguardar_horario()
-
-def funcao_dotk():
-    parabutao = loop, result, loop.close
-    texto_inicial2['text'] = str(parabutao)
-
-janela = Tk()
-janela.title('Robo versão 2.1')
-texto_inicial = Label(janela, text='Rodando o robo')
-texto_inicial.grid(column=0, row=0)
-botao = Button(janela, text='Rodar', command=funcao_dotk)
-botao.grid(column=0, row=1)
-texto_inicial2 = Label(janela, text='')
-texto_inicial2.grid(column=0, row=2)
-
-janela.mainloop()
-
 
 while True:
-    agora = datetime.now().strftime('%H:%M')
-    if agora > HORA_FIM:
-        print(f'Fim do horario de {HORA_FIM} agora são {agora}')
-        salvar_print_csv(f'Fim do horario de {HORA_FIM} agora são {agora}')
-        print('')
-        break
+    aguardar_horario()
+    ohlc = get_ohlc_with_ema(PAPEL, TEMPO_GRAFICO)
+    fechar_dia()
+    if ohlc.iloc[-2]['close'] < ohlc.iloc[-2]['sma80'] and ohlc.iloc[-1]['close'] > ohlc.iloc[-1]['sma80']:
+        compra()
+    elif ohlc.iloc[-2]['close'] > ohlc.iloc[-2]['sma80'] and ohlc.iloc[-1]['close'] < ohlc.iloc[-1]['sma80']:
+        venda()
+    time.sleep(60)
 
-    resultado = get_ohlc_with_ema(PAPEL, mt.TIMEFRAME_M1)
-    sma8 = resultado['sma8'].iloc[-1]
-    sma21 = resultado['sma21'].iloc[-1]
-    sma80 = resultado['sma80'].iloc[-1]
-    #sma200 = resultado['sma200'].iloc[-1]
-    pagora=mt.symbol_info(PAPEL).last
-
-    posicoes = mt.positions_get(symbol=PAPEL)
-
-    for posicao in posicoes:
-        if posicao.type == 0:
-            posicao='comprado'
-        elif posicao.type == 1:
-            posicao='vendido'
-
-    if len(posicoes) == 0:
-        if (sma8 > sma21) and (pagora > sma8) and (pagora > sma21):
-            print('Cima')
-            salvar_print_csv('Cima')
-            time.sleep(10)
-            compra()
-        elif (sma8 < sma21) and (pagora < sma8) and (pagora < sma21):
-            print('Baixo')
-            salvar_print_csv('Baixo')
-            time.sleep(10)
-            venda()
-    elif len(posicoes) > 0:
-        if posicao == 'comprado':
-            if (pagora < sma21):
-                print('sair da compra')
-                salvar_print_csv('sair da compra')
-                venda()
-        elif posicao == 'vendido':
-            if (pagora > sma21):
-                print('sair da venda')
-                salvar_print_csv('sair da venda')
-                compra()
-    time.sleep(3)
-
-fechar_dia()
+root.mainloop()

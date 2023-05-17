@@ -1,259 +1,281 @@
-2023-05-17 12:06:44,"Digite o codigo do papel
+2023-05-17 14:40:09,"Digite o código do papel
  (deixe em branco para usar 'WINM23')"
-2023-05-17 12:06:46,"Digite o timeframe
+2023-05-17 14:40:18,"Digite o timeframe
  (deixe em branco para usar 'mt.TIMEFRAME_M1')"
-2023-05-17 12:06:46,"Digite o tamanho do lote
+2023-05-17 14:40:19,"Digite o tamanho do lote
  (deixe em branco para usar '1')"
-2023-05-17 12:06:46,"Digite um comentário
- (deixe em branco para usar 'winmbot')"
-2023-05-17 12:06:47,"Digite a hora de início
- (deixe em branco para usar '09:10')"
-2023-05-17 12:06:47,"Digite a hora de fim
- (deixe em branco para usar '17:50')"
-2023-05-17 12:06:47,"Digite o valor de perda
- (deixe em branco para usar '1000')"
-2023-05-17 12:06:47,"Digite o valor de ganho
- (deixe em branco para usar '2500')"
-2023-05-17 12:06:47,"Digite o numero magico
- (deixe em branco para usar '1')"
-2023-05-17 12:06:48,Agora são 12:06
-2023-05-17 12:18:48,"Digite o codigo do papel
- (deixe em branco para usar 'WINM23')"
-2023-05-17 12:18:58,Tempo limite de 10 segundos atingido. Usando 'WINM23' por padrão.
-2023-05-17 12:18:58,"Digite o timeframe
- (deixe em branco para usar 'mt.TIMEFRAME_M1')"
-2023-05-17 12:19:02,"Digite o tamanho do lote
- (deixe em branco para usar '1')"
-2023-05-17 12:19:03,"Digite um comentário
- (deixe em branco para usar 'winmbot')"
-2023-05-17 12:19:03,"Digite a hora de início
- (deixe em branco para usar '09:10')"
-2023-05-17 12:19:03,"Digite a hora de fim
- (deixe em branco para usar '17:50')"
-2023-05-17 12:19:04,"Digite o valor de perda
- (deixe em branco para usar '1000')"
-2023-05-17 12:19:04,"Digite o valor de ganho
- (deixe em branco para usar '2500')"
-2023-05-17 12:19:05,"Digite o numero magico
- (deixe em branco para usar '1')"
-2023-05-17 12:19:05,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'winmbot', '09:10', '17:50', 1000.0, 2500.0, 1)"
-2023-05-17 12:19:05,Inicialização concluída com sucesso!
-2023-05-17 12:19:05,Agora são 12:19
-2023-05-17 12:25:09,Cima
-2023-05-17 12:25:39,>>>Comprando 1.0 de WINM23 preço 110125.0 com tp 112625.0 e sl 109125.0
-2023-05-17 12:33:44,sair da compra
-2023-05-17 12:33:44,>>>Vendendo 1.0 de WINM23 preço 110115.0 com tp 107615.0 e sl 111115.0
-2023-05-17 12:33:47,Cima
-2023-05-17 12:34:17,>>>Comprando 1.0 de WINM23 preço 110115.0 com tp 112615.0 e sl 109115.0
-2023-05-17 12:34:20,sair da compra
-2023-05-17 12:34:20,>>>Vendendo 1.0 de WINM23 preço 110115.0 com tp 107615.0 e sl 111115.0
-2023-05-17 12:34:23,Cima
-2023-05-17 12:34:53,>>>Comprando 1.0 de WINM23 preço 110105.0 com tp 112605.0 e sl 109105.0
-2023-05-17 12:34:56,sair da compra
-2023-05-17 12:34:56,>>>Vendendo 1.0 de WINM23 preço 110095.0 com tp 107595.0 e sl 111095.0
-2023-05-17 12:34:59,Cima
-2023-05-17 12:35:29,>>>Comprando 1.0 de WINM23 preço 110125.0 com tp 112625.0 e sl 109125.0
-2023-05-17 12:35:32,sair da compra
-2023-05-17 12:35:32,>>>Vendendo 1.0 de WINM23 preço 110120.0 com tp 107620.0 e sl 111120.0
-2023-05-17 12:35:35,Cima
-2023-05-17 12:36:06,>>>Comprando 1.0 de WINM23 preço 110140.0 com tp 112640.0 e sl 109140.0
-2023-05-17 12:36:09,sair da compra
-2023-05-17 12:36:09,>>>Vendendo 1.0 de WINM23 preço 110130.0 com tp 107630.0 e sl 111130.0
-2023-05-17 12:36:12,Cima
-2023-05-17 12:36:42,>>>Comprando 1.0 de WINM23 preço 110115.0 com tp 112615.0 e sl 109115.0
-2023-05-17 12:36:45,sair da compra
-2023-05-17 12:36:45,>>>Vendendo 1.0 de WINM23 preço 110115.0 com tp 107615.0 e sl 111115.0
-2023-05-17 12:36:48,Cima
-2023-05-17 12:37:02,"Digite o codigo do papel
- (deixe em branco para usar 'WINM23')"
-2023-05-17 12:37:16,"Digite o codigo do papel
- (deixe em branco para usar 'WINM23')"
-2023-05-17 12:37:18,"Digite o timeframe
- (deixe em branco para usar 'mt.TIMEFRAME_M1')"
-2023-05-17 12:37:19,"Digite o tamanho do lote
- (deixe em branco para usar '1')"
-2023-05-17 12:37:20,"Digite um comentário
- (deixe em branco para usar 'winmbot')"
-2023-05-17 12:37:25,"Digite a hora de início
- (deixe em branco para usar '09:10')"
-2023-05-17 12:37:28,"Digite a hora de fim
- (deixe em branco para usar '17:50')"
-2023-05-17 12:37:29,"Digite o valor de perda
- (deixe em branco para usar '1000')"
-2023-05-17 12:37:29,"Digite o valor de ganho
- (deixe em branco para usar '2500')"
-2023-05-17 12:37:30,"Digite o numero magico
- (deixe em branco para usar '1')"
-2023-05-17 12:37:31,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versa', '09:10', '17:50', 1000.0, 2500.0, 1)"
-2023-05-17 12:37:31,Inicialização concluída com sucesso!
-2023-05-17 12:37:31,Agora são 12:37
-2023-05-17 12:37:31,Baixo
-2023-05-17 12:37:36,>>>Vendendo 1.0 de WINM23 preço 110120.0 com tp 107620.0 e sl 111120.0
-2023-05-17 12:38:12,sair da venda
-2023-05-17 12:38:13,>>>Comprando 1.0 de WINM23 preço 110145.0 com tp 112645.0 e sl 109145.0
-2023-05-17 12:38:16,Baixo
-2023-05-17 12:38:21,>>>Vendendo 1.0 de WINM23 preço 110145.0 com tp 107645.0 e sl 111145.0
-2023-05-17 12:38:24,sair da venda
-2023-05-17 12:38:24,>>>Comprando 1.0 de WINM23 preço 110170.0 com tp 112670.0 e sl 109170.0
-2023-05-17 12:38:27,Baixo
-2023-05-17 12:38:32,>>>Vendendo 1.0 de WINM23 preço 110165.0 com tp 107665.0 e sl 111165.0
-2023-05-17 12:38:35,sair da venda
-2023-05-17 12:38:35,>>>Comprando 1.0 de WINM23 preço 110170.0 com tp 112670.0 e sl 109170.0
-2023-05-17 12:38:38,Baixo
-2023-05-17 12:38:43,>>>Vendendo 1.0 de WINM23 preço 110170.0 com tp 107670.0 e sl 111170.0
-2023-05-17 12:38:46,sair da venda
-2023-05-17 12:38:46,>>>Comprando 1.0 de WINM23 preço 110195.0 com tp 112695.0 e sl 109195.0
-2023-05-17 12:38:49,Baixo
-2023-05-17 12:38:54,>>>Vendendo 1.0 de WINM23 preço 110180.0 com tp 107680.0 e sl 111180.0
-2023-05-17 12:38:57,sair da venda
-2023-05-17 12:38:58,>>>Comprando 1.0 de WINM23 preço 110190.0 com tp 112690.0 e sl 109190.0
-2023-05-17 12:39:01,Baixo
-2023-05-17 12:39:06,>>>Vendendo 1.0 de WINM23 preço 110185.0 com tp 107685.0 e sl 111185.0
-2023-05-17 12:39:09,sair da venda
-2023-05-17 12:39:09,>>>Comprando 1.0 de WINM23 preço 110185.0 com tp 112685.0 e sl 109185.0
-2023-05-17 12:39:12,Baixo
-2023-05-17 12:39:18,>>>Vendendo 1.0 de WINM23 preço 110180.0 com tp 107680.0 e sl 111180.0
-2023-05-17 12:39:21,sair da venda
-2023-05-17 12:39:21,>>>Comprando 1.0 de WINM23 preço 110185.0 com tp 112685.0 e sl 109185.0
-2023-05-17 12:39:24,Baixo
-2023-05-17 12:39:29,>>>Vendendo 1.0 de WINM23 preço 110180.0 com tp 107680.0 e sl 111180.0
-2023-05-17 12:39:32,sair da venda
-2023-05-17 12:39:32,>>>Comprando 1.0 de WINM23 preço 110185.0 com tp 112685.0 e sl 109185.0
-2023-05-17 12:39:35,Baixo
-2023-05-17 12:39:40,>>>Vendendo 1.0 de WINM23 preço 110185.0 com tp 107685.0 e sl 111185.0
-2023-05-17 12:39:43,sair da venda
-2023-05-17 12:39:43,>>>Comprando 1.0 de WINM23 preço 110195.0 com tp 112695.0 e sl 109195.0
-2023-05-17 12:39:46,Baixo
-2023-05-17 12:39:51,>>>Vendendo 1.0 de WINM23 preço 110195.0 com tp 107695.0 e sl 111195.0
-2023-05-17 12:39:54,sair da venda
-2023-05-17 12:39:54,>>>Comprando 1.0 de WINM23 preço 110175.0 com tp 112675.0 e sl 109175.0
-2023-05-17 12:39:58,Baixo
-2023-05-17 12:40:03,>>>Vendendo 1.0 de WINM23 preço 110145.0 com tp 107645.0 e sl 111145.0
-2023-05-17 12:40:18,sair da venda
-2023-05-17 12:40:18,>>>Comprando 1.0 de WINM23 preço 110155.0 com tp 112655.0 e sl 109155.0
-2023-05-17 12:40:21,Baixo
-2023-05-17 12:40:26,>>>Vendendo 1.0 de WINM23 preço 110155.0 com tp 107655.0 e sl 111155.0
-2023-05-17 12:40:29,sair da venda
-2023-05-17 12:40:29,>>>Comprando 1.0 de WINM23 preço 110155.0 com tp 112655.0 e sl 109155.0
-2023-05-17 12:40:32,Baixo
-2023-05-17 12:40:37,>>>Vendendo 1.0 de WINM23 preço 110150.0 com tp 107650.0 e sl 111150.0
-2023-05-17 12:40:40,sair da venda
-2023-05-17 12:40:40,>>>Comprando 1.0 de WINM23 preço 110165.0 com tp 112665.0 e sl 109165.0
-2023-05-17 12:40:43,Baixo
-2023-05-17 12:40:48,>>>Vendendo 1.0 de WINM23 preço 110160.0 com tp 107660.0 e sl 111160.0
-2023-05-17 12:40:54,sair da venda
-2023-05-17 12:40:54,>>>Comprando 1.0 de WINM23 preço 110155.0 com tp 112655.0 e sl 109155.0
-2023-05-17 12:40:57,Baixo
-2023-05-17 12:41:02,>>>Vendendo 1.0 de WINM23 preço 110175.0 com tp 107675.0 e sl 111175.0
-2023-05-17 12:41:05,sair da venda
-2023-05-17 12:41:05,>>>Comprando 1.0 de WINM23 preço 110185.0 com tp 112685.0 e sl 109185.0
-2023-05-17 12:41:08,Cima
-2023-05-17 12:41:13,>>>Comprando 1.0 de WINM23 preço 110180.0 com tp 112680.0 e sl 109180.0
-2023-05-17 12:41:25,sair da compra
-2023-05-17 12:41:25,>>>Vendendo 1.0 de WINM23 preço 110145.0 com tp 107645.0 e sl 111145.0
-2023-05-17 12:41:28,Baixo
-2023-05-17 12:41:33,>>>Vendendo 1.0 de WINM23 preço 110130.0 com tp 107630.0 e sl 111130.0
-2023-05-17 12:41:42,sair da venda
-2023-05-17 12:41:42,>>>Comprando 1.0 de WINM23 preço 110150.0 com tp 112650.0 e sl 109150.0
-2023-05-17 12:41:45,Baixo
-2023-05-17 12:41:50,>>>Vendendo 1.0 de WINM23 preço 110145.0 com tp 107645.0 e sl 111145.0
-2023-05-17 12:41:53,sair da venda
-2023-05-17 12:41:53,>>>Comprando 1.0 de WINM23 preço 110155.0 com tp 112655.0 e sl 109155.0
-2023-05-17 12:41:56,Baixo
-2023-05-17 12:42:01,>>>Vendendo 1.0 de WINM23 preço 110135.0 com tp 107635.0 e sl 111135.0
-2023-05-17 12:42:29,sair da venda
-2023-05-17 12:42:29,>>>Comprando 1.0 de WINM23 preço 110165.0 com tp 112665.0 e sl 109165.0
-2023-05-17 12:42:32,Cima
-2023-05-17 12:42:37,>>>Comprando 1.0 de WINM23 preço 110150.0 com tp 112650.0 e sl 109150.0
-2023-05-17 12:42:49,sair da compra
-2023-05-17 12:42:49,>>>Vendendo 1.0 de WINM23 preço 110145.0 com tp 107645.0 e sl 111145.0
-2023-05-17 12:42:52,Cima
-2023-05-17 12:42:57,>>>Comprando 1.0 de WINM23 preço 110150.0 com tp 112650.0 e sl 109150.0
-2023-05-17 12:43:00,sair da compra
-2023-05-17 12:43:00,>>>Vendendo 1.0 de WINM23 preço 110145.0 com tp 107645.0 e sl 111145.0
-2023-05-17 12:43:03,Cima
-2023-05-17 12:43:08,>>>Comprando 1.0 de WINM23 preço 110160.0 com tp 112660.0 e sl 109160.0
-2023-05-17 12:43:11,sair da compra
-2023-05-17 12:43:11,>>>Vendendo 1.0 de WINM23 preço 110140.0 com tp 107640.0 e sl 111140.0
-2023-05-17 12:43:14,Baixo
-2023-05-17 12:43:19,>>>Vendendo 1.0 de WINM23 preço 110145.0 com tp 107645.0 e sl 111145.0
-2023-05-17 12:43:37,sair da venda
-2023-05-17 12:43:37,>>>Comprando 1.0 de WINM23 preço 110155.0 com tp 112655.0 e sl 109155.0
-2023-05-17 12:43:40,Baixo
-2023-05-17 12:43:45,>>>Vendendo 1.0 de WINM23 preço 110165.0 com tp 107665.0 e sl 111165.0
-2023-05-17 12:43:48,sair da venda
-2023-05-17 12:43:48,>>>Comprando 1.0 de WINM23 preço 110155.0 com tp 112655.0 e sl 109155.0
-2023-05-17 12:43:51,Baixo
-2023-05-17 12:43:56,>>>Vendendo 1.0 de WINM23 preço 110160.0 com tp 107660.0 e sl 111160.0
-2023-05-17 12:43:59,sair da venda
-2023-05-17 12:43:59,>>>Comprando 1.0 de WINM23 preço 110165.0 com tp 112665.0 e sl 109165.0
-2023-05-17 12:44:02,Baixo
-2023-05-17 12:44:07,>>>Vendendo 1.0 de WINM23 preço 110145.0 com tp 107645.0 e sl 111145.0
-2023-05-17 12:44:43,sair da venda
-2023-05-17 12:44:44,>>>Comprando 1.0 de WINM23 preço 110170.0 com tp 112670.0 e sl 109170.0
-2023-05-17 12:44:47,Cima
-2023-05-17 12:44:52,>>>Comprando 1.0 de WINM23 preço 110175.0 com tp 112675.0 e sl 109175.0
-2023-05-17 12:48:33,"Digite o codigo do papel
- (deixe em branco para usar 'WINM23')"
-2023-05-17 12:48:34,"Digite o timeframe
- (deixe em branco para usar 'mt.TIMEFRAME_M1')"
-2023-05-17 12:48:34,"Digite o tamanho do lote
- (deixe em branco para usar '1')"
-2023-05-17 12:48:35,"Digite um comentário
- (deixe em branco para usar 'versao3')"
-2023-05-17 12:48:35,"Digite a hora de início
- (deixe em branco para usar '09:10')"
-2023-05-17 12:48:36,"Digite a hora de fim
- (deixe em branco para usar '17:50')"
-2023-05-17 12:48:36,"Digite o valor de perda
- (deixe em branco para usar '1000')"
-2023-05-17 12:48:37,"Digite o valor de ganho
- (deixe em branco para usar '2500')"
-2023-05-17 12:48:37,"Digite o numero magico
- (deixe em branco para usar '1')"
-2023-05-17 12:48:38,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3', '09:10', '17:50', 1000.0, 2500.0, 1)"
-2023-05-17 12:48:38,Inicialização concluída com sucesso!
-2023-05-17 12:48:38,Agora são 12:48
-2023-05-17 12:49:41,sair da compra
-2023-05-17 12:49:41,>>>Vendendo 1.0 de WINM23 preço 110160.0 com tp 107660.0 e sl 111160.0
-2023-05-17 12:49:44,Cima
-2023-05-17 12:49:54,>>>Comprando 1.0 de WINM23 preço 110170.0 com tp 112670.0 e sl 109170.0
-2023-05-17 12:50:03,sair da compra
-2023-05-17 12:50:03,>>>Vendendo 1.0 de WINM23 preço 110160.0 com tp 107660.0 e sl 111160.0
-2023-05-17 12:50:09,Cima
-2023-05-17 12:50:19,>>>Comprando 1.0 de WINM23 preço 110195.0 com tp 112695.0 e sl 109195.0
-2023-05-17 12:50:37,sair da compra
-2023-05-17 12:50:37,>>>Vendendo 1.0 de WINM23 preço 110155.0 com tp 107655.0 e sl 111155.0
-2023-05-17 12:50:40,Cima
-2023-05-17 12:50:50,>>>Comprando 1.0 de WINM23 preço 110180.0 com tp 112680.0 e sl 109180.0
-2023-05-17 12:51:21,sair da compra
-2023-05-17 12:51:21,>>>Vendendo 1.0 de WINM23 preço 110150.0 com tp 107650.0 e sl 111150.0
-2023-05-17 12:53:05,"Digite o codigo do papel
- (deixe em branco para usar 'WINM23')"
-2023-05-17 12:53:06,"Digite o timeframe
- (deixe em branco para usar 'mt.TIMEFRAME_M1')"
-2023-05-17 12:53:06,"Digite o tamanho do lote
- (deixe em branco para usar '1')"
-2023-05-17 12:53:06,"Digite um comentário
+2023-05-17 14:40:19,"Digite um comentário
  (deixe em branco para usar 'versao3b')"
-2023-05-17 12:53:06,"Digite a hora de início
+2023-05-17 14:40:19,"Digite a hora de início
  (deixe em branco para usar '09:10')"
-2023-05-17 12:53:06,"Digite a hora de fim
+2023-05-17 14:40:19,"Digite a hora de fim
  (deixe em branco para usar '17:50')"
-2023-05-17 12:53:07,"Digite o valor de perda
+2023-05-17 14:40:19,"Digite o valor de perda
  (deixe em branco para usar '1000')"
-2023-05-17 12:53:07,"Digite o valor de ganho
+2023-05-17 14:40:19,"Digite o valor de ganho
  (deixe em branco para usar '2500')"
-2023-05-17 12:53:07,"Digite o numero magico
+2023-05-17 14:40:20,"Digite o número mágico
  (deixe em branco para usar '1')"
-2023-05-17 12:53:07,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3b', '09:10', '17:50', 1000.0, 2500.0, 1)"
-2023-05-17 12:53:07,Inicialização concluída com sucesso!
-2023-05-17 12:53:07,Agora são 12:53
-2023-05-17 12:54:59,Baixo
-2023-05-17 12:55:09,>>>Vendendo 1.0 de WINM23 preço 110095.0 com tp 107595.0 e sl 111095.0
-2023-05-17 13:05:41,sair da venda
-2023-05-17 13:05:41,>>>Comprando 1.0 de WINM23 preço 110140.0 com tp 112640.0 e sl 109140.0
-2023-05-17 13:07:26,Cima
-2023-05-17 13:07:36,>>>Comprando 1.0 de WINM23 preço 110270.0 com tp 112770.0 e sl 109270.0
-2023-05-17 13:26:28,sair da compra
-2023-05-17 13:26:28,>>>Vendendo 1.0 de WINM23 preço 110240.0 com tp 107740.0 e sl 111240.0
+2023-05-17 14:45:13,"Digite o codigo do papel
+ (deixe em branco para usar 'WINM23')"
+2023-05-17 14:45:15,"Digite o timeframe
+ (deixe em branco para usar 'mt.TIMEFRAME_M1')"
+2023-05-17 14:45:15,"Digite o tamanho do lote
+ (deixe em branco para usar '1')"
+2023-05-17 14:45:15,"Digite um comentário
+ (deixe em branco para usar 'versao3b')"
+2023-05-17 14:45:15,"Digite a hora de início
+ (deixe em branco para usar '09:10')"
+2023-05-17 14:45:15,"Digite a hora de fim
+ (deixe em branco para usar '17:50')"
+2023-05-17 14:45:16,"Digite o valor de perda
+ (deixe em branco para usar '1000')"
+2023-05-17 14:45:16,"Digite o valor de ganho
+ (deixe em branco para usar '2500')"
+2023-05-17 14:45:16,"Digite o numero magico
+ (deixe em branco para usar '1')"
+2023-05-17 14:45:17,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3b', '09:10', '17:50', 1000.0, 2500.0, 1)"
+2023-05-17 14:45:17,Inicialização concluída com sucesso!
+2023-05-17 14:45:17,Agora são 14:45
+2023-05-17 14:47:52,"Digite o codigo do papel
+ (deixe em branco para usar 'WINM23')"
+2023-05-17 14:47:54,"Digite o timeframe
+ (deixe em branco para usar 'mt.TIMEFRAME_M1')"
+2023-05-17 14:47:54,"Digite o tamanho do lote
+ (deixe em branco para usar '1')"
+2023-05-17 14:47:54,"Digite um comentário
+ (deixe em branco para usar 'versao3b')"
+2023-05-17 14:47:55,"Digite a hora de início
+ (deixe em branco para usar '09:10')"
+2023-05-17 14:47:55,"Digite a hora de fim
+ (deixe em branco para usar '17:50')"
+2023-05-17 14:47:55,"Digite o valor de perda
+ (deixe em branco para usar '1000')"
+2023-05-17 14:47:55,"Digite o valor de ganho
+ (deixe em branco para usar '2500')"
+2023-05-17 14:47:55,"Digite o numero magico
+ (deixe em branco para usar '1')"
+2023-05-17 14:47:56,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3b', '09:10', '17:50', 1000.0, 2500.0, 1)"
+2023-05-17 14:47:56,Inicialização concluída com sucesso!
+2023-05-17 14:47:56,Agora são 14:47
+2023-05-17 14:48:04,Inicialização concluída com sucesso!
+2023-05-17 14:48:06,Inicialização concluída com sucesso!
+2023-05-17 14:48:09,Inicialização concluída com sucesso!
+2023-05-17 14:48:11,Inicialização concluída com sucesso!
+2023-05-17 14:48:33,Inicialização concluída com sucesso!
+2023-05-17 14:48:33,Inicialização concluída com sucesso!
+2023-05-17 14:50:26,"Digite o codigo do papel
+ (deixe em branco para usar 'WINM23')"
+2023-05-17 14:50:31,"Digite o timeframe
+ (deixe em branco para usar 'mt.TIMEFRAME_M1')"
+2023-05-17 14:50:32,"Digite o tamanho do lote
+ (deixe em branco para usar '1')"
+2023-05-17 14:50:32,"Digite um comentário
+ (deixe em branco para usar 'versao3b')"
+2023-05-17 14:50:32,"Digite a hora de início
+ (deixe em branco para usar '09:10')"
+2023-05-17 14:50:32,"Digite a hora de fim
+ (deixe em branco para usar '17:50')"
+2023-05-17 14:50:32,"Digite o valor de perda
+ (deixe em branco para usar '1000')"
+2023-05-17 14:50:32,"Digite o valor de ganho
+ (deixe em branco para usar '2500')"
+2023-05-17 14:50:33,"Digite o numero magico
+ (deixe em branco para usar '1')"
+2023-05-17 14:50:33,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3b', '09:10', '17:50', 1000.0, 2500.0, 1)"
+2023-05-17 14:50:33,Inicialização concluída com sucesso!
+2023-05-17 14:50:33,Agora são 14:50
+2023-05-17 15:35:36,"Digite o codigo do papel
+ (deixe em branco para usar 'WINM23')"
+2023-05-17 15:35:46,Tempo limite de 10 segundos atingido. Usando 'WINM23' por padrão.
+2023-05-17 15:35:46,"Digite o timeframe
+ (deixe em branco para usar 'mt.TIMEFRAME_M1')"
+2023-05-17 15:35:56,Tempo limite de 10 segundos atingido. Usando 'mt.TIMEFRAME_M1' por padrão.
+2023-05-17 15:35:56,"Digite o tamanho do lote
+ (deixe em branco para usar '1')"
+2023-05-17 15:36:06,Tempo limite de 10 segundos atingido. Usando '1' por padrão.
+2023-05-17 15:36:06,"Digite um comentário
+ (deixe em branco para usar 'versao3b')"
+2023-05-17 15:36:16,Tempo limite de 10 segundos atingido. Usando 'versao3b' por padrão.
+2023-05-17 15:36:16,"Digite a hora de início
+ (deixe em branco para usar '09:10')"
+2023-05-17 15:36:26,Tempo limite de 10 segundos atingido. Usando '09:10' por padrão.
+2023-05-17 15:36:26,"Digite a hora de fim
+ (deixe em branco para usar '17:50')"
+2023-05-17 15:36:36,Tempo limite de 10 segundos atingido. Usando '17:50' por padrão.
+2023-05-17 15:36:36,"Digite o valor de perda
+ (deixe em branco para usar '1000')"
+2023-05-17 15:36:46,Tempo limite de 10 segundos atingido. Usando '1000' por padrão.
+2023-05-17 15:36:46,"Digite o valor de ganho
+ (deixe em branco para usar '2500')"
+2023-05-17 15:36:56,Tempo limite de 10 segundos atingido. Usando '2500' por padrão.
+2023-05-17 15:36:56,"Digite o numero magico
+ (deixe em branco para usar '1')"
+2023-05-17 15:37:06,Tempo limite de 10 segundos atingido. Usando '1' por padrão.
+2023-05-17 15:37:06,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3b', '09:10', '17:50', 1000.0, 2500.0, 1)"
+2023-05-17 15:37:06,Inicialização concluída com sucesso!
+2023-05-17 15:37:06,Agora são 15:37
+2023-05-17 15:39:47,"Digite o codigo do papel
+ (deixe em branco para usar 'WINM23')"
+2023-05-17 15:39:50,"Digite o timeframe
+ (deixe em branco para usar 'mt.TIMEFRAME_M1')"
+2023-05-17 15:39:51,"Digite o tamanho do lote
+ (deixe em branco para usar '1')"
+2023-05-17 15:39:51,"Digite um comentário
+ (deixe em branco para usar 'versao3b')"
+2023-05-17 15:39:51,"Digite a hora de início
+ (deixe em branco para usar '09:10')"
+2023-05-17 15:39:51,"Digite a hora de fim
+ (deixe em branco para usar '17:50')"
+2023-05-17 15:39:51,"Digite o valor de perda
+ (deixe em branco para usar '1000')"
+2023-05-17 15:39:51,"Digite o valor de ganho
+ (deixe em branco para usar '2500')"
+2023-05-17 15:39:52,"Digite o numero magico
+ (deixe em branco para usar '1')"
+2023-05-17 15:39:52,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3b', '09:10', '17:50', 1000.0, 2500.0, 1)"
+2023-05-17 15:39:52,Inicialização concluída com sucesso!
+2023-05-17 15:39:52,Agora são 15:39
+2023-05-17 15:41:59,"Digite o codigo do papel
+ (deixe em branco para usar 'WINM23')"
+2023-05-17 15:42:03,"Digite o timeframe
+ (deixe em branco para usar 'mt.TIMEFRAME_M1')"
+2023-05-17 15:42:03,"Digite o tamanho do lote
+ (deixe em branco para usar '1')"
+2023-05-17 15:42:03,"Digite um comentário
+ (deixe em branco para usar 'versao3b')"
+2023-05-17 15:42:04,"Digite a hora de início
+ (deixe em branco para usar '09:10')"
+2023-05-17 15:42:04,"Digite a hora de fim
+ (deixe em branco para usar '17:50')"
+2023-05-17 15:42:04,"Digite o valor de perda
+ (deixe em branco para usar '1000')"
+2023-05-17 15:42:04,"Digite o valor de ganho
+ (deixe em branco para usar '2500')"
+2023-05-17 15:42:04,"Digite o numero magico
+ (deixe em branco para usar '1')"
+2023-05-17 15:42:04,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3b', '09:10', '17:50', 1000.0, 2500.0, 1)"
+2023-05-17 15:42:04,Inicialização concluída com sucesso!
+2023-05-17 15:42:04,Agora são 15:42
+2023-05-17 15:48:58,"Digite o codigo do papel
+ (deixe em branco para usar 'WINM23')"
+2023-05-17 15:49:02,"Digite o timeframe
+ (deixe em branco para usar 'mt.TIMEFRAME_M1')"
+2023-05-17 15:49:02,"Digite o tamanho do lote
+ (deixe em branco para usar '1')"
+2023-05-17 15:49:02,"Digite um comentário
+ (deixe em branco para usar 'versao3b')"
+2023-05-17 15:49:03,"Digite a hora de início
+ (deixe em branco para usar '09:10')"
+2023-05-17 15:49:03,"Digite a hora de fim
+ (deixe em branco para usar '17:50')"
+2023-05-17 15:49:03,"Digite o valor de perda
+ (deixe em branco para usar '1000')"
+2023-05-17 15:49:03,"Digite o valor de ganho
+ (deixe em branco para usar '2500')"
+2023-05-17 15:49:03,"Digite o numero magico
+ (deixe em branco para usar '1')"
+2023-05-17 15:49:03,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3b', '09:10', '17:50', 1000.0, 2500.0, 1)"
+2023-05-17 15:49:03,Inicialização concluída com sucesso!
+2023-05-17 15:49:03,Agora são 15:49
+2023-05-17 15:51:00,"Digite o codigo do papel
+ (deixe em branco para usar 'WINM23')"
+2023-05-17 15:51:03,"Digite o timeframe
+ (deixe em branco para usar 'mt.TIMEFRAME_M1')"
+2023-05-17 15:51:03,"Digite o tamanho do lote
+ (deixe em branco para usar '1')"
+2023-05-17 15:51:03,"Digite um comentário
+ (deixe em branco para usar 'versao3b')"
+2023-05-17 15:51:03,"Digite a hora de início
+ (deixe em branco para usar '09:10')"
+2023-05-17 15:51:03,"Digite a hora de fim
+ (deixe em branco para usar '17:50')"
+2023-05-17 15:51:04,"Digite o valor de perda
+ (deixe em branco para usar '1000')"
+2023-05-17 15:51:04,"Digite o valor de ganho
+ (deixe em branco para usar '2500')"
+2023-05-17 15:51:04,"Digite o numero magico
+ (deixe em branco para usar '1')"
+2023-05-17 15:51:04,"('WINM23', 'mt.TIMEFRAME_M1', 1.0, 'versao3b', '09:10', '17:50', 1000.0, 2500.0, 1)"
+2023-05-17 15:51:04,Inicialização concluída com sucesso!
+2023-05-17 15:51:04,Agora são 15:51
+2023-05-17 15:51:52,sair da compra
+2023-05-17 15:51:52,>>>Vendendo 1.0 de WINM23 preço 110320.0 com tp 107820.0 e sl 111320.0
+2023-05-17 15:51:55,Cima
+2023-05-17 15:52:05,>>>Comprando 1.0 de WINM23 preço 110360.0 com tp 112860.0 e sl 109360.0
+2023-05-17 15:52:41,sair da compra
+2023-05-17 15:52:41,>>>Vendendo 1.0 de WINM23 preço 110315.0 com tp 107815.0 e sl 111315.0
+2023-05-17 15:53:12,Cima
+2023-05-17 15:53:22,>>>Comprando 1.0 de WINM23 preço 110350.0 com tp 112850.0 e sl 109350.0
+2023-05-17 15:54:46,sair da compra
+2023-05-17 15:54:46,>>>Vendendo 1.0 de WINM23 preço 110330.0 com tp 107830.0 e sl 111330.0
+2023-05-17 15:54:55,Cima
+2023-05-17 15:55:05,>>>Comprando 1.0 de WINM23 preço 110345.0 com tp 112845.0 e sl 109345.0
+2023-05-17 15:55:11,sair da compra
+2023-05-17 15:55:11,>>>Vendendo 1.0 de WINM23 preço 110330.0 com tp 107830.0 e sl 111330.0
+2023-05-17 15:57:09,Baixo
+2023-05-17 15:57:19,>>>Vendendo 1.0 de WINM23 preço 110280.0 com tp 107780.0 e sl 111280.0
+2023-05-17 16:01:04,sair da venda
+2023-05-17 16:01:04,>>>Comprando 1.0 de WINM23 preço 110335.0 com tp 112835.0 e sl 109335.0
+2023-05-17 16:04:08,Cima
+2023-05-17 16:04:18,>>>Comprando 1.0 de WINM23 preço 110430.0 com tp 112930.0 e sl 109430.0
+2023-05-17 16:14:45,sair da compra
+2023-05-17 16:14:45,>>>Vendendo 1.0 de WINM23 preço 110390.0 com tp 107890.0 e sl 111390.0
+2023-05-17 16:16:42,Cima
+2023-05-17 16:16:52,>>>Comprando 1.0 de WINM23 preço 110435.0 com tp 112935.0 e sl 109435.0
+2023-05-17 16:18:59,sair da compra
+2023-05-17 16:18:59,>>>Vendendo 1.0 de WINM23 preço 110420.0 com tp 107920.0 e sl 111420.0
+2023-05-17 16:19:05,Cima
+2023-05-17 16:19:15,>>>Comprando 1.0 de WINM23 preço 110430.0 com tp 112930.0 e sl 109430.0
+2023-05-17 16:19:18,sair da compra
+2023-05-17 16:19:18,>>>Vendendo 1.0 de WINM23 preço 110425.0 com tp 107925.0 e sl 111425.0
+2023-05-17 16:19:21,Baixo
+2023-05-17 16:19:31,>>>Vendendo 1.0 de WINM23 preço 110410.0 com tp 107910.0 e sl 111410.0
+2023-05-17 16:28:30,sair da venda
+2023-05-17 16:28:30,>>>Comprando 1.0 de WINM23 preço 110410.0 com tp 112910.0 e sl 109410.0
+2023-05-17 16:29:09,Baixo
+2023-05-17 16:29:19,>>>Vendendo 1.0 de WINM23 preço 110350.0 com tp 107850.0 e sl 111350.0
+2023-05-17 16:39:25,sair da venda
+2023-05-17 16:39:25,>>>Comprando 1.0 de WINM23 preço 110365.0 com tp 112865.0 e sl 109365.0
+2023-05-17 16:40:16,Baixo
+2023-05-17 16:40:26,>>>Vendendo 1.0 de WINM23 preço 110305.0 com tp 107805.0 e sl 111305.0
+2023-05-17 16:41:05,sair da venda
+2023-05-17 16:41:05,>>>Comprando 1.0 de WINM23 preço 110350.0 com tp 112850.0 e sl 109350.0
+2023-05-17 16:41:48,Baixo
+2023-05-17 16:41:58,>>>Vendendo 1.0 de WINM23 preço 110310.0 com tp 107810.0 e sl 111310.0
+2023-05-17 16:42:58,sair da venda
+2023-05-17 16:42:58,>>>Comprando 1.0 de WINM23 preço 110350.0 com tp 112850.0 e sl 109350.0
+2023-05-17 16:44:07,Cima
+2023-05-17 16:44:17,>>>Comprando 1.0 de WINM23 preço 110400.0 com tp 112900.0 e sl 109400.0
+2023-05-17 17:06:43,sair da compra
+2023-05-17 17:06:43,>>>Vendendo 1.0 de WINM23 preço 110475.0 com tp 107975.0 e sl 111475.0
+2023-05-17 17:08:11,Cima
+2023-05-17 17:08:21,>>>Comprando 1.0 de WINM23 preço 110515.0 com tp 113015.0 e sl 109515.0
+2023-05-17 17:13:34,sair da compra
+2023-05-17 17:13:34,>>>Vendendo 1.0 de WINM23 preço 110505.0 com tp 108005.0 e sl 111505.0
+2023-05-17 17:14:31,Cima
+2023-05-17 17:14:41,>>>Comprando 1.0 de WINM23 preço 110540.0 com tp 113040.0 e sl 109540.0
+2023-05-17 17:14:59,sair da compra
+2023-05-17 17:15:00,>>>Vendendo 1.0 de WINM23 preço 110510.0 com tp 108010.0 e sl 111510.0
+2023-05-17 17:16:24,Cima
+2023-05-17 17:16:34,>>>Comprando 1.0 de WINM23 preço 110530.0 com tp 113030.0 e sl 109530.0
+2023-05-17 17:16:37,sair da compra
+2023-05-17 17:16:37,>>>Vendendo 1.0 de WINM23 preço 110510.0 com tp 108010.0 e sl 111510.0
+2023-05-17 17:16:40,Cima
+2023-05-17 17:16:50,>>>Comprando 1.0 de WINM23 preço 110520.0 com tp 113020.0 e sl 109520.0
+2023-05-17 17:16:53,sair da compra
+2023-05-17 17:16:53,>>>Vendendo 1.0 de WINM23 preço 110515.0 com tp 108015.0 e sl 111515.0
+2023-05-17 17:18:11,Cima
+2023-05-17 17:18:21,>>>Comprando 1.0 de WINM23 preço 110520.0 com tp 113020.0 e sl 109520.0
+2023-05-17 17:18:27,sair da compra
+2023-05-17 17:18:27,>>>Vendendo 1.0 de WINM23 preço 110510.0 com tp 108010.0 e sl 111510.0
+2023-05-17 17:18:30,Cima
+2023-05-17 17:18:41,>>>Comprando 1.0 de WINM23 preço 110530.0 com tp 113030.0 e sl 109530.0
+2023-05-17 17:19:11,sair da compra
+2023-05-17 17:19:11,>>>Vendendo 1.0 de WINM23 preço 110500.0 com tp 108000.0 e sl 111500.0
+2023-05-17 17:19:14,Baixo
+2023-05-17 17:19:24,>>>Vendendo 1.0 de WINM23 preço 110505.0 com tp 108005.0 e sl 111505.0
+2023-05-17 17:19:27,sair da venda
+2023-05-17 17:19:27,>>>Comprando 1.0 de WINM23 preço 110515.0 com tp 113015.0 e sl 109515.0
+2023-05-17 17:19:30,Cima
+2023-05-17 17:19:40,>>>Comprando 1.0 de WINM23 preço 110525.0 com tp 113025.0 e sl 109525.0

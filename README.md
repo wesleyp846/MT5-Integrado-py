@@ -1,3 +1,5 @@
+# Projeto em pausa
+
 # Ferramenta de Automação de Estratégias de Investimento
 
 #####
